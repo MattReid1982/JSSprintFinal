@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  font-family: fantasy;
+}
+body {
+  background-color: slategrey;
+}
+
+.mainbox {
+  width: 1006px;
+  /* height: 600px; will be removed later */
+  background-color: white;
+  border: 3px solid gray;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* The header section. */
+header {
+  width: 1000px;
+  height: 200px;
+  background-color: rgb(62, 48, 50);
+  color: black;
+  padding: 10px;
+}
+
+/* The header is made up of a message bar and the banner image. */
+.tophead {
+  width: 1000px;
+  height: 40px;
+  background-color: white;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: larger;
+  padding: 8px;
+  border-bottom: 3px solid gray;
+}
+
+
+/* The navigation section. */
+
+nav {
+  width: 1000px;
+  height: 50px;
+  background-color: rgb(62, 48, 50);
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+}
+
+/* The nav section will contain 2 divs. */
+
+.navleft {
+  width: 493px;
+  height: 45px;
+  background-color: rgb(62, 48, 50);
+  float: left;
+  font-size: 18pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+}
+
+.navright {
+  width: 495px;
+  height: 45px;
+  background-color: rgb(62, 48, 50);
+  margin-left: 5px;
+  float: right;
+   font-size: 18pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+  
+}
+/*nav a:visited { 
+  color: black;
+  text-decoration: none;
+  color: rgb(62, 48, 50);
+  background-color: white;
+  text-decoration: none;
+} */
+
+
+main {
+  width: 1000px;
+  height: 625px;
+  background-color: black;
+}
+
+/* The main section will contain 3 divs. */
+
+.maintopleft {
+  width: 490px;
+  height: 370px;
+  background-color: rgb(62, 48, 50);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+
+.mainright {
+  width: 490px;
+  height: 610px;
+  background-color: rgb(62, 48, 50);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  float: right;
+}
+
+.mainbottomleft {
+  width: 490px;
+  height: 300px;
+  background-color: rgb(62, 48, 50);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+#storyArea{
+  margin:auto;
+  padding: 10px;
+  font-family: fantasy;
+  color: white;
+  
+}
+footer {
+  width: 1000px;
+  height: 80px;
+  background-color: black;
+  border-top: 3px solid gray;
+}

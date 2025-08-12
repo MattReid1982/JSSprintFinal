@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Always set up the title and link to
+         the style sheet up front. -->
+    <title>Front-end Developer Kit</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+   
+  </head>
+  
+  <body>
+    
+    <div id="Header">
+     
+    </div>
+   
+    <div class="mainbox">
+      <header>
+        <div class="tophead">
+            
+          <span id="message"></span>
+          
+        </div>
+
+        <div class="banner"></div>
+      </header>
+
+
+      <!--This will be the Navigation section. On the left will be the original page links, on the right will be ones that we picked for the page.-->
+      
+      <nav>
+        <div class="navleft">
+          <a href="home.html">Home</a>&nbsp;|&nbsp;
+          <a href="services.html">Services</a>&nbsp;|&nbsp;
+          <a href="about.html">About</a>&nbsp;|&nbsp;
+          <a href="contact.html">Contact</a>&nbsp;|&nbsp;
+        </div>
+
+        <div class="navright"></div>
+      </nav>
+
+      <main>
+        
+        <!--Create a story for the user to assist you with.-->
+
+        <div class="maintopleft">
+          <button id="storyBtn">Tell me a story</button>
+          <div id="storyArea"></div> <!--The story will appear here.--> 
+        </div>
+        
+        <div class="mainright"></div>
+
+        <div class="mainbottomleft"></div>
+      </main>
+
+      <footer></footer>
+    
+      <script src="index.js"></script> <!--Links the JavaScript page to the HTML.-->
+      
+      <script>
+        updateHeader(); // Run once at page load.
+      </script>
+    
+  </div>
+  </body>
+</html>
