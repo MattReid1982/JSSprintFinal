@@ -96,3 +96,9 @@ document.getElementById("storyBtn").addEventListener("click", function(){
   }
 
 });
+// Prompts and story section.  When the button is clicked, the user will input the variables and a story will be generated.
+
+document.getElementById("storyBtn").addEventListener("click", function(){
+
+
+});
