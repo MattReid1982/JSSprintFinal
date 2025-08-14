@@ -93,9 +93,9 @@ nav a:visited {
 }
 
 nav a:hover{
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 main {
