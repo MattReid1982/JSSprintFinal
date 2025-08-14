@@ -106,9 +106,9 @@ document.getElementById("storyBtn").addEventListener("click", function(){
 let step = 0;
 let Images = new Array();
 Images[0] = "Images/BannerImages1.jpg";
-Images[1] = "Images/Feb.jpg";
-Images[2] = "Images/Mar.jpg";
-Images[3] = "Images/Apr.jpg";
-Images[4] = "Images/May.jpg";
-Images[5] = "Images/Jun.jpg";
+Images[1] = "Images/BannerImages2.jpg";
+Images[2] = "Images/BannerImages3.jpg";
+Images[3] = "Images/BannerImages4.jpg";
+Images[4] = "Images/BannerImages5.jpg";
+Images[5] = "Images/BannerImages6.jpg";
 
