@@ -43,10 +43,10 @@ function updateHeader(){
   }
 
   const quotes = [
-  " In like a lion out like a lamb",
-  " Roads? Where we’re going, we don’t need roads.",
+   "In like a lion out like a lamb",
+   "Roads? Where we're going, we don't need roads.",
    "Be excellent to each other and party on.",
-   "Wax on, wax off, don’t forget the balance.",
+   "Wax on, wax off, don't forget the balance.",
    "I feel the need, the need for some speed.",
    "Number Five is alive and ready to input more."
   ];
@@ -175,6 +175,56 @@ btn.addEventListener('click',() => {
       
 });
   // clickSound.play();
+
+
+  //=============
+// Loan Report Here 
+  //==============
+document.addEventListener("DOMContentLoaded", () => {
+document.getElementById("LoanAnalysis");
+addEventListener("click", generateLoanAnalysis);
+});
+   //=============
+//  Inputs Here 
+  //============== 
+function generateLoanAnalysis() {
+  const loanAmount = parseFloat(prompt("Enter Loan Amount: "));
+  const Reasoning = prompt("Enter Reasoning For Loan:  ");
+  const Rate = 0.052;
+  
+  // Here is the table 
+
+   let html = 
+   '<h3>Loan Analysis Statement </h3>'
+   '<p> Reason:' + Reason + '</p>';
+   
+   
+   
+  //   <tr>
+  //     <td style="text-align:center;">${years}</td>
+  //     <td style="text-align:right;">$${toCurrency(interest)}</td>
+  //     <td style="text-align:right;">$${toCurrency(total)}</td>
+  //     <td style= "text-align:right;">$${toCurrency(monthly)}</td>
+  //   </tr>
+  // ';
+}
+
+
+// log choice 
+// let choice = parseInt(prompt("Enter Number Of Years (1-10) , 10");
+// if(isNaN(choice) || choice < 1 || choice > 10) choice = "-";
+// html+= <p>'Payback Option Selected: ${choice} Years'</p>;
+
+// const container = document.getElementById("loanArea");
+// while (container.firstChild){
+//   container.removeChild(container.firstChild);
+// }
+
+// container.appendChild(table);
+// container.appendChild(choice);
+
+
+
 
 
 const confettiBtn = document.getElementById("confettiBtn");
