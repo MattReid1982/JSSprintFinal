@@ -106,12 +106,12 @@ document.getElementById("storyBtn").addEventListener("click", function(){
 // Banner images.
 let step = 0;
 let Images = new Array();
-Images[0] = "Images/BannerImages1.jpg";
-Images[1] = "Images/BannerImages2.jpeg";
-Images[2] = "Images/BannerImages3.jpeg";
-Images[3] = "Images/BannerImages4.jpg";
-Images[4] = "Images/BannerImages5.jpeg";
-Images[5] = "Images/BannerImages6.jpeg";
+Images[0] = "Images/BannerImage1.jpg";
+Images[1] = "Images/BannerImage2.jpeg";
+Images[2] = "Images/BannerImage3.jpeg";
+Images[3] = "Images/BannerImage4.jpg";
+Images[4] = "Images/BannerImage5.jpeg";
+Images[5] = "Images/BannerImage6.jpeg";
 
 window.onload = setInterval(gallery, 3000);
 
