@@ -107,11 +107,11 @@ document.getElementById("storyBtn").addEventListener("click", function(){
 let step = 0;
 let Images = new Array();
 Images[0] = "Images/BannerImages1.jpg";
-Images[1] = "Images/BannerImages2.jpg";
-Images[2] = "Images/BannerImages3.jpg";
+Images[1] = "Images/BannerImages2.jpeg";
+Images[2] = "Images/BannerImages3.jpeg";
 Images[3] = "Images/BannerImages4.jpg";
-Images[4] = "Images/BannerImages5.jpg";
-Images[5] = "Images/BannerImages6.jpg";
+Images[4] = "Images/BannerImages5.jpeg";
+Images[5] = "Images/BannerImages6.jpeg";
 
 window.onload = setInterval(gallery, 3000);
 
@@ -119,7 +119,6 @@ function gallery() {
 //change image
 document.getElementById("ImgSlide").src = Images[step];
 //Or you can use - document.images.slide.src=Images[step];
-// is step more than the image array?
 if (step < Images.length - 1) {
 // No - add 1 for next image.
 step++;
