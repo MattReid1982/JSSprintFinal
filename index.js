@@ -181,24 +181,25 @@ btn.addEventListener('click',() => {
 // Loan Report Here 
   //==============
 document.addEventListener("DOMContentLoaded", () => {
-document.getElementById("LoanAnalysis");
-addEventListener("click", generateLoanAnalysis);
+  const loanbtn = document.getElementById("loanAnalysis");
+  if (!loanbtn) return;
+  loanbtn.addEventListener("click", generateLoanAnalysis);
 });
    //=============
 //  Inputs Here 
   //============== 
 function generateLoanAnalysis() {
   const loanAmount = parseFloat(prompt("Enter Loan Amount: "));
-  const Reasoning = prompt("Enter Reasoning For Loan:  ");
+  const Reasoning = prompt("Enter Reason For Loan:  ");
   const Rate = 0.052;
   
   // Here is the table 
 
    let html = 
-   '<h3>Loan Analysis Statement </h3>'
-   '<p> Reason:' + Reason + '</p>';
+   '<h3> Loan Analysis Statement </h3>' 
+   '<p> Reason:' + Reasoning + '</p>';
    
-   
+   document.getElementById("loanArea").innerHTML = html;
    
   //   <tr>
   //     <td style="text-align:center;">${years}</td>
