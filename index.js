@@ -118,9 +118,8 @@ window.onload = setInterval(gallery, 3000);
 function gallery() {
 //change image
 document.getElementById("ImgSlide").src = Images[step];
-//Or you can use - document.images.slide.src=Images[step];
 if (step < Images.length - 1) {
-// No - add 1 for next image.
+// Add 1 for next image.
 step++;
 } else {
 // Yes - Start from the first image
