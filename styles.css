@@ -39,17 +39,29 @@ header {
   padding: 10px;
 }
 
+.banner {
+  height: 200px;
+  overflow: hidden;
+
+}
+.banner img{
+  width: 100%;
+  
+  object-fit: fi
+  overflow: hidden;
+  
+}
 /* The header is made up of a message bar and the banner image. */
 .tophead {
   width: 980px;
   height: 40px;
-  background-color: darkgoldenrod;
+  background-color: #fb571a;
   text-align: center;
   font-family: fantasy;
   font-weight: bold;
   font-size: 30px;
   padding: 1px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid darkcyan;
 }
 
 /* The navigation section. */
@@ -195,10 +207,13 @@ main {
   
  }
 
+ 
+
+
   .output-paper{
           position: relative;
           top: 12px;
-          left: 70px;
+          left: 56px;
           width: 100%;
           font-family: monospace;
           line-height: .5cm;
@@ -207,38 +222,48 @@ main {
           z-index: 1;
                   }
   .output-paper h3{
-    margin-top: 30px;
-    margin-left: 50px;
-    
+    margin-top: 50px;
+    margin-left: 55px;
+    font-family: monospace;
+    font-weight: bold;
   
   }
 
+  #loanAnalysis{
+    position:absolute;
+    background-color: darkcyan;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+  }
 
     .output-paper p{
       position: relative;
-    margin-top: 45px; 
-    padding-left: 30px;
+    margin-top: 15px; 
+    padding-left: 40px;
     padding-bottom: 1px;
+    font-weight: bold;
   }
   
   .loan-table{
-    width: 345px;
+    width: 320px;
     border-collapse: collapse;
     font-family: monospace;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 35px;
+    margin-top:  20px;
     
      }     
 
 
      
   .loan-table td {
-    border: 2px solid black;
+    border: 3px solid black;
     padding: 1px;
-    text-align: center;
+    text-align: right;
   }
   .loan-table th {
-    border: 2px solid black;
+    border: 3px solid black;
     padding: 1px;
     padding-bottom: 1px;
     text-align: center;

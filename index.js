@@ -196,13 +196,15 @@ function generateLoanAnalysis() {
     return;
   }
   const Rate = 0.052;
-  const Reasoning = prompt("Enter Reason For Loan:  ") || "";
+  const Reasoning = (prompt("Enter Reason For Loan:  ") || "")
+  .toLowerCase()
+  .replace(/\b\w/g, C => C.toUpperCase());
   
   
   // Here is the table 
 
    let html = "";
-    html += "<h3> Loan Analysis Statement </h3>"; 
+    html += "<h3> Loan Analysis Statement </h3>";
     html += "<p> 10 Year Option For Loan of $" + loanAmount.toFixed(2) +"</p>";
     html += "<p> Reason: " + Reasoning + "</p>";
     html += "<p> Statement Date:" + new Date().toLocaleDateString() + "</p>";
@@ -227,6 +229,15 @@ function generateLoanAnalysis() {
     html += "</tr>";
   }
  html += "</table>";
+
+  var choice = parseInt(prompt("Enter Number Of Years (1 - 10): "))
+
+  if (isNaN(choice) || choice < 1 || choice > 10) {
+    html += "<p>Option Not Selected Or Valid</p>";
+  } else {
+    html += "<p>Payback Option: " + choice + " Years</p";
+  }
+
    document.getElementById("loanArea").innerHTML = html;
 }
 
