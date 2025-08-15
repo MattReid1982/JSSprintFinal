@@ -70,14 +70,46 @@ nav {
 }
 
 .navright {
-  width: 495px;
-  height: 45px;
-  background-color: rgb(62, 48, 50);
-  margin-left: 5px;
+  /* width: 150px; */
+  height: 30px;
+  display: flex;
+object-fit: contain;
+  /* background-color: rgb(62, 48, 50); */
   float: right;
-  font-size: 18pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding: 10px;
+  padding-left:5px;
+  align-items: center; 
+  
+}
+
+#OptPrime,
+#OptPrimeBtn{
+  position: relative;
+  z-index: 10;
+}
+
+#OptPrime{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display:block;
+  margin-top: 9px;
+}
+
+#OptPrimeBtn{
+  width: 175px;
+  height: 20px;
+  margin-top: 35px;
+  margin-right: 15px;
+  font-weight: 900;
+  font-family: papyrus;
+  background-color: aqua;
+  border-radius: 4px;
+  
+}
+
+#OptPrimeBtn:hover{
+  transform: scale(1.09);
+  
 }
 
 nav a:link {

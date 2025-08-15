@@ -134,4 +134,53 @@ const clickSound = document.getElementById("clickSound");
 soundBtn.addEventListener("click",()=>{
   clickSound.currentTime = 0; //Rewind to start.
   clickSound.onplay();
-  });
+})
+  //=============
+// new section added - moving robot hopefully 
+  //==============
+ //=================================
+ //===--BUTTON FOR ROBOT HERE--======
+  //=================================
+   //=============
+// Updated Click Section For Working ORder 
+  //==============
+
+// Targeting Elements Here 
+const btn = document.getElementById("OptPrimeBtn")
+const img = document.getElementById("OptPrime")
+
+
+let robot = false; // this should set robot still if not clicked upon.
+const GIFClose = 5200;
+const GIFOpen = 5200;
+
+
+//clicking during animation will cause issues so this was implemented.
+btn.addEventListener('click',() => {
+    btn.disabled = true;
+ 
+  if (!robot) {
+    img.src = img.dataset.open + "?" + Date.now(); // this creates a unique ID for the gif so upon restart it will not cut into the gif half way through.
+    
+    // freeze transformer here 
+
+    setTimeout(() =>{
+      img.src = img.dataset.stand;
+      robot = true;
+      btn.textContent = "Autobots, Roll out!";
+      btn.classList.add('btn-highlight');
+      btn.disabled = false;
+      
+   }, GIFOpen);
+
+  } else {
+    img.src = img.dataset.close + "?" + Date.now();
+    setTimeout(() => {
+        robot = false;
+    btn.textContent = 'More Than Meets The Eyes';
+    btn.disabled = false;
+    
+    });
+  }
+      
+});
