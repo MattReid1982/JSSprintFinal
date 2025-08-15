@@ -8,7 +8,7 @@ title {
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
-  color: white;
+  color: darkorange;
   font-family: fantasy;
 }
 body {
@@ -16,6 +16,7 @@ body {
   background-image: url(backgroundimg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .mainbox {
@@ -73,24 +74,27 @@ nav {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px;
   color: darkorange;
+   text-shadow: 5px 0 black;
 }
 
 .navleft a{
   color: darkorange;
   text-decoration: none;
   transition: 0.3s ease;
+  text-shadow: black 15px;
 }
 .navleft a:hover{
-  color: white;
+  color: darkorange;
   background-color: turquoise;
   border-radius: 4px;
+  text-shadow: black 15px;
 }
 
 .navright {
   /* width: 150px; */
   height: 30px;
   display: flex;
-object-fit: contain;
+  object-fit: contain;
   /* background-color: rgb(62, 48, 50); */
   float: right;
   padding-left:5px;
@@ -102,6 +106,7 @@ object-fit: contain;
 #OptPrimeBtn{
   position: relative;
   z-index: 10;
+  text-shadow: black 15px;
 }
 
 #OptPrime{
@@ -118,8 +123,11 @@ object-fit: contain;
   margin-top: 25px;
   margin-right: 15px;
   font-weight: 900;
-  font-family: papyrus;
-  background-color: darkturquoise;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  
+
+  background-color: darkcyan;
   border-radius: 4px;
   cursor:grab;
 }
@@ -128,7 +136,8 @@ object-fit: contain;
 }
 #OptPrimeBtn:hover{
   transform: scale(1.09);
-  
+   font-family: 'Orbitron', sans-serif;
+  color: darkorange;
 }
 
 

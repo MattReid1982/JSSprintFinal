@@ -43,21 +43,12 @@ function updateHeader(){
   }
 
   const quotes = [
-    "Gotta learn stuff through denial and error.",
-    "The only way to do great work is to love what you do.",
-    "Don't worry, be happy.",
-    "Believe you can and you're halfway there.",
-    "The future belongs to those who believe in the beauty of their dreams.",
-    "Hakuna Matata.",
-    "Strive not to be a success, but rather to be of value.",
-    "Ohana means family, and family means no one gets left behind.",
-    "Don't take life seriously. You will never get out of it alive.",
-    "Hard work never killed anyone, but why take a chance.",
-    "No man leaves before his time, unless the boss leaves early.",
-    "If you don't know where you are going, any road will get you there.",
-    "The only thing that matters is what you choose to be now.",
-    "Immature is a word that boring people use to describe fun people.",
-    "Gator never been about that never."
+  " In like a lion out like a lamb",
+  " Roads? Where we’re going, we don’t need roads.",
+   "Be excellent to each other and party on.",
+   "Wax on, wax off, don’t forget the balance.",
+   "I feel the need, the need for some speed.",
+   "Number Five is alive and ready to input more."
   ];
 
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
