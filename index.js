@@ -106,20 +106,21 @@ document.getElementById("storyBtn").addEventListener("click", function(){
 // Banner images.
 let step = 0;
 let Images = new Array();
-Images[0] = "Images/BannerImage1.jpg";
-Images[1] = "Images/BannerImage2.jpeg";
-Images[2] = "Images/BannerImage3.jpeg";
-Images[3] = "Images/BannerImage4.jpg";
-Images[4] = "Images/BannerImage5.jpeg";
-Images[5] = "Images/BannerImage6.jpeg";
+Images[0] = "Images/BannerImages1.jpg";
+Images[1] = "Images/BannerImages2.jpeg";
+Images[2] = "Images/BannerImages3.jpeg";
+Images[3] = "Images/BannerImages4.jpg";
+Images[4] = "Images/BannerImages5.jpeg";
+Images[5] = "Images/BannerImages6.jpeg";
 
 window.onload = setInterval(gallery, 3000);
 
 function gallery() {
 //change image
 document.getElementById("ImgSlide").src = Images[step];
+//Or you can use - document.images.slide.src=Images[step];
 if (step < Images.length - 1) {
-// Add 1 for next image.
+// No - add 1 for next image.
 step++;
 } else {
 // Yes - Start from the first image
