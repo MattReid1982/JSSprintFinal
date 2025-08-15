@@ -134,5 +134,14 @@ const clickSound = document.getElementById("clickSound");
 soundBtn.addEventListener("click",()=>{
   clickSound.currentTime = 0; //Rewind to start.
   clickSound.play();
-  
+});
+
+const confettiBtn = document.getElementById("confettiBtn");
+
+confettiBtn.addEventListener("click", () => {
+  confetti({
+    particalCount: 200,
+    spread: 90,
+    origin:{y: 0.6}
   });
+});
