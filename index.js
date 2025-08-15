@@ -43,21 +43,12 @@ function updateHeader(){
   }
 
   const quotes = [
-    "Gotta learn stuff through denial and error.",
-    "The only way to do great work is to love what you do.",
-    "Don't worry, be happy.",
-    "Believe you can and you're halfway there.",
-    "The future belongs to those who believe in the beauty of their dreams.",
-    "Hakuna Matata.",
-    "Strive not to be a success, but rather to be of value.",
-    "Ohana means family, and family means no one gets left behind.",
-    "Don't take life seriously. You will never get out of it alive.",
-    "Hard work never killed anyone, but why take a chance.",
-    "No man leaves before his time, unless the boss leaves early.",
-    "If you don't know where you are going, any road will get you there.",
-    "The only thing that matters is what you choose to be now.",
-    "Immature is a word that boring people use to describe fun people.",
-    "Gator never been about that never."
+   "In like a lion out like a lamb",
+   "Roads? Where we're going, we don't need roads.",
+   "Be excellent to each other and party on.",
+   "Wax on, wax off, don't forget the balance.",
+   "I feel the need, the need for some speed.",
+   "Number Five is alive and ready to input more."
   ];
 
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -184,6 +175,56 @@ btn.addEventListener('click',() => {
       
 });
   // clickSound.play();
+
+
+  //=============
+// Loan Report Here 
+  //==============
+document.addEventListener("DOMContentLoaded", () => {
+document.getElementById("LoanAnalysis");
+addEventListener("click", generateLoanAnalysis);
+});
+   //=============
+//  Inputs Here 
+  //============== 
+function generateLoanAnalysis() {
+  const loanAmount = parseFloat(prompt("Enter Loan Amount: "));
+  const Reasoning = prompt("Enter Reasoning For Loan:  ");
+  const Rate = 0.052;
+  
+  // Here is the table 
+
+   let html = 
+   '<h3>Loan Analysis Statement </h3>'
+   '<p> Reason:' + Reason + '</p>';
+   
+   
+   
+  //   <tr>
+  //     <td style="text-align:center;">${years}</td>
+  //     <td style="text-align:right;">$${toCurrency(interest)}</td>
+  //     <td style="text-align:right;">$${toCurrency(total)}</td>
+  //     <td style= "text-align:right;">$${toCurrency(monthly)}</td>
+  //   </tr>
+  // ';
+}
+
+
+// log choice 
+// let choice = parseInt(prompt("Enter Number Of Years (1-10) , 10");
+// if(isNaN(choice) || choice < 1 || choice > 10) choice = "-";
+// html+= <p>'Payback Option Selected: ${choice} Years'</p>;
+
+// const container = document.getElementById("loanArea");
+// while (container.firstChild){
+//   container.removeChild(container.firstChild);
+// }
+
+// container.appendChild(table);
+// container.appendChild(choice);
+
+
+
 
 
 const confettiBtn = document.getElementById("confettiBtn");
