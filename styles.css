@@ -181,17 +181,18 @@ main {
 .mainright {
   width: 490px;
   height: 610px;
+  position: relative;
   background-color: rgb(62, 48, 50);
   border: 1px solid black;
   padding: 10px;
   margin: 5px;
   float: right;
-  background-image: url(Backgorund-repot.png);
+  background: url(Backgorund-repot.png);
+  /* background-image: url(Backgorund-repot.png); */
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
-  position: relative;
-}
+ }
 
   .output-paper{
           position: absolute;
@@ -200,7 +201,6 @@ main {
           width: 80%;
           font-family: monospace;
           line-height: 1.1cm;
-          font-size: large;
           color: black;
           z-index: 1;
         }
