@@ -253,7 +253,45 @@ function generateLoanAnalysis() {
 // container.appendChild(table);
 // container.appendChild(choice);
 
+// Get references to the audio elements.
+const sound1 = document.getElementById('sound1');
+const sound2 = document.getElementById('sound2');
+const sound3 = document.getElementById('sound3');
+const sound4 = document.getElementById('sound4');
+const sound5 = document.getElementById('sound5');
 
+// Get refrences to the buttons.
+const sound1Button = document.getElementById('sound1Button');
+const sound2Button = document.getElementById('sound2Button');
+const sound3Button = document.getElementById('sound3Button');
+const sound4Button = document.getElementById('sound4Button');
+const sound5Button = document.getElementById('sound5Button');
+
+// Add event listeners to play the sounds.
+sound1Button.addEventListener('click', () => {
+  sound1.currentTime = 0; // Rewind to start.
+  sound1.play();
+});
+
+sound2Button.addEventListener('click', () => {
+  sound2.currentTime = 0; // Rewind to start.
+  sound2.play();
+});
+
+sound3Button.addEventListener('click', () => {
+  sound3.currentTime = 0; // Rewind to start.
+  sound3.play();
+});
+
+sound4Button.addEventListener('click', () => {
+  sound4.currentTime = 0; // Rewind to start.
+  sound4.play();
+});
+
+sound5Button.addEventListener('click', () => {
+  sound5.currentTime = 0; // Rewind to start.
+  sound5.play();
+});
 
 
 
