@@ -13,6 +13,9 @@ title {
 }
 body {
   background-color: slategrey;
+  background-image: url(backgroundimg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .mainbox {
@@ -37,13 +40,14 @@ header {
 
 /* The header is made up of a message bar and the banner image. */
 .tophead {
-  width: 1000px;
+  width: 980px;
   height: 40px;
-  background-color: white;
+  background-color: darkgoldenrod;
+  text-align: center;
   font-family: fantasy;
   font-weight: bold;
-  font-size: larger;
-  padding: 8px;
+  font-size: 30px;
+  padding: 1px;
   border-bottom: 3px solid gray;
 }
 
@@ -55,6 +59,7 @@ nav {
   background-color: rgb(62, 48, 50);
   border-top: 3px solid gray;
   border-bottom: 3px solid gray;
+
 }
 
 /* The nav section will contain 2 divs. */
@@ -66,7 +71,19 @@ nav {
   float: left;
   font-size: 18pt;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding: 10px;
+    padding: 10px;
+  color: darkorange;
+}
+
+.navleft a{
+  color: darkorange;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.navleft a:hover{
+  color: white;
+  background-color: turquoise;
+  border-radius: 4px;
 }
 
 .navright {
@@ -102,9 +119,9 @@ object-fit: contain;
   margin-right: 15px;
   font-weight: 900;
   font-family: papyrus;
-  background-color: aqua;
+  background-color: darkturquoise;
   border-radius: 4px;
- cursor:grab;
+  cursor:grab;
 }
 #OptPrimeBtn:active{
   cursor:grabbing;
@@ -113,6 +130,8 @@ object-fit: contain;
   transform: scale(1.09);
   
 }
+
+
 
 nav a:link {
   color: white;
