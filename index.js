@@ -184,3 +184,15 @@ btn.addEventListener('click',() => {
   }
       
 });
+  clickSound.play();
+});
+
+const confettiBtn = document.getElementById("confettiBtn");
+
+confettiBtn.addEventListener("click", () => {
+  confetti({
+    particalCount: 200,
+    spread: 90,
+    origin:{y: 0.6}
+  });
+});
