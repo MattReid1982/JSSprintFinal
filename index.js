@@ -180,27 +180,56 @@ btn.addEventListener('click',() => {
   //=============
 // Loan Report Here 
   //==============
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const loanbtn = document.getElementById("loanAnalysis");
-  if (!loanbtn) return;
   loanbtn.addEventListener("click", generateLoanAnalysis);
 });
+
    //=============
 //  Inputs Here 
   //============== 
 function generateLoanAnalysis() {
   const loanAmount = parseFloat(prompt("Enter Loan Amount: "));
-  const Reasoning = prompt("Enter Reason For Loan:  ");
+
+  if (isNaN(loanAmount) || loanAmount <= 0) {
+    alert("Please enter a valid positive number");
+    return;
+  }
   const Rate = 0.052;
+  const Reasoning = prompt("Enter Reason For Loan:  ") || "";
+  
   
   // Here is the table 
 
-   let html = 
-   '<h3> Loan Analysis Statement </h3>' 
-   '<p> Reason:' + Reasoning + '</p>';
+   let html = "";
+    html += "<h3> Loan Analysis Statement </h3>"; 
+    html += "<p> 10 Year Option For Loan of $" + loanAmount.toFixed(2) +"</p>";
+    html += "<p> Reason: " + Reasoning + "</p>";
+    html += "<p> Statement Date:" + new Date().toLocaleDateString() + "</p>";
    
+    html += "<table class='loan-table'>";
+    html += "<tr><th>Years</th><th>Interest</th><th>Total Amt</th><th>Monthly Payment</th></tr>"
+
+    //=============
+//  Looping Here
+  //============== 
+
+ for(let years = 1; years <= 10; years++) {
+    const interest = loanAmount * Rate * years;
+    const total = loanAmount + interest;
+    const monthly = total / (years * 12);
+
+    html += "<tr>";
+    html += "<td class = 'year'>" + years + "</td>";
+    html += "<td>$" + interest.toFixed(2) +  "</td>";
+    html += "<td>$" + total.toFixed(2) +  "</td>";
+    html += "<td>$" + monthly.toFixed(2) +  "</td>";
+    html += "</tr>";
+  }
+ html += "</table>";
    document.getElementById("loanArea").innerHTML = html;
-   
+}
+
   //   <tr>
   //     <td style="text-align:center;">${years}</td>
   //     <td style="text-align:right;">$${toCurrency(interest)}</td>
@@ -208,7 +237,7 @@ function generateLoanAnalysis() {
   //     <td style= "text-align:right;">$${toCurrency(monthly)}</td>
   //   </tr>
   // ';
-}
+
 
 
 // log choice 

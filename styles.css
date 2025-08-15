@@ -192,20 +192,58 @@ main {
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
+  
  }
 
   .output-paper{
-          position: absolute;
-          top: 60px;
-          left: 150px;
-          width: 80%;
+          position: relative;
+          top: 12px;
+          left: 70px;
+          width: 100%;
           font-family: monospace;
-          line-height: 1.1cm;
+          line-height: .5cm;
           color: black;
-          z-index: 1;
-        }
           
+          z-index: 1;
+                  }
+  .output-paper h3{
+    margin-top: 30px;
+    margin-left: 50px;
+    
+  
+  }
 
+
+    .output-paper p{
+      position: relative;
+    margin-top: 45px; 
+    padding-left: 30px;
+    padding-bottom: 1px;
+  }
+  
+  .loan-table{
+    width: 345px;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 20px;
+    
+     }     
+
+
+     
+  .loan-table td {
+    border: 2px solid black;
+    padding: 1px;
+    text-align: center;
+  }
+  .loan-table th {
+    border: 2px solid black;
+    padding: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+
+  }
 
 .mainbottomleft {
   width: 490px;
