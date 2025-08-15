@@ -132,7 +132,7 @@ const clickSound = document.getElementById("clickSound");
 
 soundBtn.addEventListener("click",()=>{
   clickSound.currentTime = 0; //Rewind to start.
-  clickSound.onplay();
+  clickSound.play();
 })
   //=============
 // new section added - moving robot hopefully 

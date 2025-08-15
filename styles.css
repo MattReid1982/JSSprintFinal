@@ -81,6 +81,7 @@ object-fit: contain;
   
 }
 
+
 #OptPrime,
 #OptPrimeBtn{
   position: relative;
@@ -176,7 +177,7 @@ main {
   font-family: fantasy;
   color: white;
 }
-
+ 
 footer {
   width: 1000px;
   height: 80px;
@@ -184,8 +185,3 @@ footer {
   border-top: 3px solid gray;
 }
 
-
-.soundBtn{
-  padding:10px 20px; 
-  font-size:18px;
-}
