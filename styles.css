@@ -197,7 +197,7 @@ main {
   .output-paper{
           position: absolute;
           top: 60px;
-          left: 40px;
+          left: 150px;
           width: 80%;
           font-family: monospace;
           line-height: 1.1cm;
