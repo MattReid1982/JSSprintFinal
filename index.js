@@ -184,8 +184,8 @@ btn.addEventListener('click',() => {
   }
       
 });
-  clickSound.play();
-});
+  // clickSound.play();
+
 
 const confettiBtn = document.getElementById("confettiBtn");
 
