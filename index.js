@@ -264,6 +264,15 @@ function generateLoanAnalysis() {
 // container.appendChild(table);
 // container.appendChild(choice);
 
+function playBoth() {
+  const gif = document.getElementById("gif");
+  const audio = document.getElementById("audio");
+
+  gif.style.display = "block"; // Show Gif from frame 1
+  gif.src = "peter.gif" + Date.now(); // Restart GIF from frame 1
+  audio.currentTime = 0;
+  audio.play();
+}
 
 
 
