@@ -274,7 +274,7 @@ main {
     margin-left: 35px;
     margin-top:  20px;
     
-     }     
+  }     
 
 
      
@@ -294,18 +294,57 @@ main {
 .mainbottomleft {
   width: 490px;
   height: 230px;
-  background-color: rgb(62, 48, 50);
+  background-color: #fb571a;;
   border: 1px solid black;
   padding: 10px;
   margin: 5px;
   float: left;
 }
+.mainbottomleft .button{
+    background-color: darkcyan;
+  border-radius: 4px;
+  cursor:grab;
+}
+
+
+#soundBtn:hover{
+  transform: scale(1.09);
+   font-family: 'Orbitron', sans-serif;
+  color: darkorange;
+}
+
+#soundBtn{
+  background-color: darkcyan;
+  color: white;
+  border-radius: 4px;
+}
+#confettiBtn{
+  background-color: darkcyan;
+  color: white;
+  border-radius: 4px;
+}
+
+#confettiBtn:hover{
+  transform: scale(1.09);
+   font-family: 'Orbitron', sans-serif;
+  color: darkorange;
+}  
 
 #storyArea{
   margin:auto;
   padding: 10px;
   font-family: fantasy;
   color: white;
+}
+#storyBtn{
+  background-color: darkcyan;
+  color: white;
+  border-radius: 4px;
+}
+#storyBtn:hover{
+  transform: scale(1.09);
+  font-family:'Orbitron', sans-serif;
+  color: darkorange;
 }
  
 footer {
