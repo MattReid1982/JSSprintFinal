@@ -46,11 +46,10 @@ header {
 }
 .banner img{
   width: 100%;
-  
-  object-fit: fi
+  object-fit: fit;
   overflow: hidden;
-  
 }
+
 /* The header is made up of a message bar and the banner image. */
 .tophead {
   width: 980px;
@@ -84,9 +83,9 @@ nav {
   float: left;
   font-size: 18pt;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
+  padding: 10px;
   color: darkorange;
-   text-shadow: 5px 0 black;
+  text-shadow: 5px 0 black;
 }
 
 .navleft a{
@@ -328,7 +327,7 @@ main {
   font-family:'Orbitron', sans-serif;
   color: darkorange;
 }
- 
+
 footer {
   width: 1000px;
   height: 80px;
@@ -337,3 +336,13 @@ footer {
 
 }
 
+#socialmedia img{
+  margin: -14px 15px ;
+  width: 30px;
+  height: auto;
+  float: right;
+}
+
+#socialmedia :hover{
+    transform: scale(2.2);
+}
