@@ -15,7 +15,6 @@ body {
   background-color: slategrey;
   background-image: url(backgroundimg.png);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
@@ -40,14 +39,14 @@ header {
 }
 
 .banner {
-  height: 200px;
   overflow: hidden;
-
 }
 .banner img{
-  width: 100%;
-  object-fit: fit;
-  overflow: hidden;
+ object-fit: cover;
+ transform: scale(0.);
+ object-position: center;
+ overflow: auto;
+ 
 }
 
 /* The header is made up of a message bar and the banner image. */
@@ -67,7 +66,7 @@ header {
 
 nav {
   width: 1000px;
-  height: 50px;
+  height: 51px;
   background-color: rgb(62, 48, 50);
   border-top: 3px solid gray;
   border-bottom: 3px solid gray;
@@ -96,14 +95,15 @@ nav {
 }
 .navleft a:hover{
   color: darkorange;
-  background-color: turquoise;
+  background-color: darkcyan;
   border-radius: 4px;
   text-shadow: black 15px;
 }
 
 .navright {
   /* width: 150px; */
-  height: 30px;
+  white-space: nowrap;
+  height: 20px;
   display: flex;
   object-fit: contain;
   /* background-color: rgb(62, 48, 50); */
@@ -116,6 +116,7 @@ nav {
 #OptPrime,
 #OptPrimeBtn{
   position: relative;
+  object-fit: contain;
   z-index: 10;
   text-shadow: black 15px;
 }
@@ -154,21 +155,24 @@ nav {
 
 
 nav a:link {
-  color: white;
+  color: darkcyan;
+  text-shadow: #fb571a 0 2px;
   text-decoration: none;
+  font-size: 30px;
   
 }
 nav a:visited { 
   color: black;
   text-decoration: none;
   color: rgb(62, 48, 50);
-  background-color: white;
+  background-color: #fb571a;
 }
 
 nav a:hover{
   color: rgb(0, 0, 0);
   text-decoration: none;
   background-color: rgb(255, 255, 255);
+  text-shadow: black 0 3px;
 }
 
 main {
@@ -228,6 +232,22 @@ main {
   
   }
 
+  #loanAnalysis:hover {
+    position:absolute;
+    margin-left: 180px;
+    background-color: darkcyan;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    color: darkorange;
+    border-radius: 4px;
+    cursor: grab;
+    transform: scale(1.09);
+  }
+
+  #loanAnalysis:active {
+    cursor:grabbing;
+  }
+
   #loanAnalysis{
     position:absolute;
     margin-left: 180px;
@@ -235,7 +255,7 @@ main {
     font-weight: 900;
     font-family: 'Orbitron', sans-serif;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: grab;
   }
 
